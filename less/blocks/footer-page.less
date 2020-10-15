@@ -1,0 +1,111 @@
+.footer-page{
+	width:320px;
+	margin:0 auto;
+	background-color:#f1f1f1;
+display:flex;
+flex-direction:column;
+}
+
+.footer-page__logo{
+	display:none;
+}
+
+.footer-page__social{
+	list-style:none;
+	padding:0;
+	margin:0;
+	display:flex;
+	width:150px;
+	justify-content:space-between;
+	margin:0 auto;
+	margin-top:25px;
+}
+
+
+.footer-page__develeropment{
+	font-family:OpenSans;
+	font-weight:bold;
+	line-height:18px;
+	font-size:19px;
+margin-left:69px;
+position:relative;
+border-top:1px solid #e5e5e5;
+padding-top:30px;
+padding-bottom:15px;
+}
+
+.footer-page__develeropment::after{
+	content:"";
+	background-image:url(../img/htmlacademy.png);
+	width:27px;
+	height:34px;
+	position:absolute;
+	top:23px;
+	right:70px;
+}
+
+
+@media(min-width:@tablet-width){
+	.footer-page{
+	width:768px;
+	flex-direction:row;
+	padding:0px 50px;
+	box-sizing:border-box;
+}
+
+.footer-page__logo{
+	display:block;
+	margin-right:110px;
+	margin-left:34px;
+	margin-top:30px;
+
+}
+
+
+
+.footer-page__social{
+margin:0;
+	margin-top:40px;
+	margin-right:34px;
+}
+
+
+.footer-page__develeropment{
+border-top:none;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+.footer-page__develeropment::after{
+	
+	top:16px;
+	right:-45px;
+}
+
+.footer-page__social li:nth-child(2){
+	position:relative;
+	top:-6px;
+}
+
+}
+
+@media(min-width:@desktop-width){
+	.footer-page{
+	width:1250px;
+	padding:0px 100px 0px 66px;
+}
+
+
+.footer-page__logo{
+	margin-right:329px;
+
+}
+
+
+
+.footer-page__social{
+
+	margin-right:226px;
+}
+
+}
